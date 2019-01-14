@@ -15,7 +15,10 @@ namespace zoo.Classes
         {
             Console.WriteLine("I stay still, but my eyes are open and neck upright.");
         }
-
+        public bool BuryHead()
+        {
+            return true;
+        }
         public override bool fly()
         {
             return false;

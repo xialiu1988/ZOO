@@ -1,4 +1,5 @@
 ﻿using System;
+
 using zoo.Classes;
 
 namespace zoo
@@ -11,8 +12,9 @@ namespace zoo
 
 //created a new object of Tiger ,Teddy is a Tiger
             Tiger tiger = new Tiger();
-            tiger.name = "Ted";
-            tiger.speak(tiger.name);
+            
+           string name=tiger.Speak("Ted");
+            Console.WriteLine($"Hello,my name is {name}, i am a tiger");
             Console.WriteLine("My color is:"+ tiger.color);
             Console.WriteLine($"I have { tiger.legs} legs");
             tiger.Eat();

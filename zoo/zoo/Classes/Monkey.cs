@@ -20,10 +20,14 @@ namespace zoo.Classes
             Console.WriteLine("I can sleep on the tree!");
 
         }
-
-        public static bool ClimbTree()
+        public override bool CanSwim()
+        {
+            return false;
+        }
+        public bool ClimbTree()
         {
             return true;
         }
+       
     }
 }

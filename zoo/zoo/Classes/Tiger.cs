@@ -21,9 +21,10 @@ namespace zoo.Classes
             Console.WriteLine("I sleep on the ground.");
         }
 
-        public void speak(string name)
+        public string Speak(string name)
         {
-            Console.WriteLine($"Hello,my name is {name}, i am a tiger");
+           
+            return name;
         }
     }
 }

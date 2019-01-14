@@ -19,5 +19,18 @@ namespace zoo.Classes
         {
             Console.WriteLine("I like sleeping oh the grass after i have meals");
         }
+
+        public override bool CanSwim()
+        {
+            return false;
+        }
+
+
+        public bool ClimbTree()
+        {
+            return true;
+        }
+
+
     }
 }
