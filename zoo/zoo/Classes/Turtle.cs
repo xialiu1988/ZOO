@@ -12,5 +12,10 @@ namespace zoo.Classes
             Console.WriteLine("I eat water lettuce, and water hyacinth");
         }
 
+        public bool HideHeadInShell()
+        {
+            return true;
+        }
+
     }
 }
