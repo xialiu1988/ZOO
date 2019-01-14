@@ -7,6 +7,8 @@ namespace ZooTDD
 {
     public class UnitTest1
     {
+       
+
         [Fact]
         public void TigerCanSpeakitsName()
         {
@@ -97,5 +99,21 @@ namespace ZooTDD
             Ostrich ostrich = new Ostrich();
             Assert.True(ostrich.BuryHead());
         }
+
+        [Fact]
+        public void HowlerMOnkeyscanHowl()
+        {
+            HowlerMonkeys howler= new HowlerMonkeys();
+            Assert.True(howler.Howling());
+        }
+
+        [Fact]
+        public void HowlerMOnkeyscanClimbTree()
+        {
+            HowlerMonkeys howler = new HowlerMonkeys();
+            Assert.True(howler.ClimbTree());
+        }
+
+
     }
 }
