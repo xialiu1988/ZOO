@@ -1,0 +1,73 @@
+﻿using System;
+using zoo.Classes;
+
+namespace zoo
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+//created a new object of Tiger ,Teddy is a Tiger
+            Tiger tiger = new Tiger();
+            tiger.name = "Ted";
+            tiger.speak(tiger.name);
+            Console.WriteLine("My color is:"+ tiger.color);
+            Console.WriteLine($"I have { tiger.legs} legs");
+            tiger.Eat();
+            tiger.Sleep();
+
+
+            Console.WriteLine("**************");
+            //created a panda object
+
+            Panda panda = new Panda();
+            panda.name = "Sunshine";
+            Console.WriteLine($"Hi! I am a panda my name is {panda.name}");
+            panda.Eat();
+            panda.Sleep();
+
+            Console.WriteLine("**************");
+            //created a Monkey object
+            Monkey monkey = new Monkey();
+            monkey.name = "King";
+            Console.WriteLine($"Hi! I am a monkey my name is {monkey.name}");
+            monkey.Eat();
+            monkey.Sleep();
+
+            Console.WriteLine("**************");
+            //created a Tutle object
+
+            Turtle turtle = new Turtle();
+            turtle.shell = 1;
+            turtle.name = "Alex";
+            Console.WriteLine($"Hi I am turtle,my name is {turtle.name} and i have {turtle.shell} shell");
+            turtle.Eat();
+            turtle.Move();
+           Console.WriteLine( turtle.ControlBodyTemperature());
+            turtle.Sleep();
+
+
+            Console.WriteLine("**************");
+            //created a Owl object
+
+            Owl owl = new Owl();
+            owl.Sleep();
+            owl.Eat();
+            owl.sound();
+           Console.WriteLine("I can fly:"+ owl.fly());
+
+
+            Console.WriteLine("**************");
+            //created a Ostrich object
+
+            Ostrich ostrich = new Ostrich();
+            ostrich.Sleep();
+            ostrich.Eat();
+            Console.WriteLine("I can fly:" + ostrich.fly());
+
+
+        }
+    }
+}
