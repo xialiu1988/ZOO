@@ -180,8 +180,8 @@ namespace ZooTDD
         [Fact]
         public void GreyparrotIsBird()
         {
-            GreyParrot bird = new GreyParrot();
-            Assert.True(bird is Bird);
+            GreyParrot greyParrot = new GreyParrot();
+            Assert.True(greyParrot is Bird);
         }
     }
 }
