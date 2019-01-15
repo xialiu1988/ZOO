@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Interfaces;
 
 namespace zoo.Classes
 {
-    public class Monkey : Mammal
+    public class Monkey : Mammal,Edible,Mimic
     {
         public override string color => "Dark Brown";
 
         public override int legs => 4;
+
+        public string type { get =>"Monkey"; set =>GetType(); }
 
         public override void Eat()
         {
@@ -28,6 +31,15 @@ namespace zoo.Classes
         {
             return true;
         }
-       
+
+        public void run()
+        {
+            Console.WriteLine("We run fast!");
+        }
+
+        public string Mimic(string movement)
+        {
+            return $"I can mimic {movement}, i am smart";
+        }
     }
 }

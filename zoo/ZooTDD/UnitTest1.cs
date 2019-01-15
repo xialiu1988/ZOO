@@ -115,5 +115,73 @@ namespace ZooTDD
         }
 
 
+        [Fact]
+        public void TigerCanHuntMonkey()
+        {
+            Tiger tiger = new Tiger();
+            HowlerMonkeys monkey =new HowlerMonkeys();
+          
+  
+            Assert.Equal("Monkey", tiger.Hunt(monkey));
+        }
+
+
+        [Fact]
+        public void TigerCanHuntOstrich()
+        {
+            Tiger tiger = new Tiger();
+           Ostrich mon = new Ostrich();
+
+
+            Assert.Equal("Ostrich", tiger.Hunt(mon));
+        }
+        [Fact]
+        public void OwlrCanHuntTurtle()
+        {
+            Owl owl = new Owl();
+            Turtle turtle = new Turtle();
+
+
+            Assert.Equal("Turtle", owl.Hunt(turtle));
+        }
+
+
+
+        [Fact]
+        public void MonkeycanMimic()
+        {
+            HowlerMonkeys monkey = new HowlerMonkeys();
+            string move = "touch the toe";
+            string expected = "I can mimic touch the toe, i am smart";
+            Assert.Equal(expected, monkey.Mimic(move));
+        }
+
+
+        [Fact]
+        public void ParrotscanMimic()
+        {
+            GreyParrot greyParrot = new GreyParrot();
+
+            string move = "touch the toe";
+            string expected = "I like mimic human talk!";
+            Assert.Equal(expected, greyParrot.Mimic(move));
+        }
+
+
+        [Fact]
+        public void HowlerMOnkeysIsMonkey()
+        {
+            HowlerMonkeys howler = new HowlerMonkeys();
+            Assert.True(howler is Monkey);
+        }
+
+
+
+        [Fact]
+        public void GreyparrotIsBird()
+        {
+            GreyParrot bird = new GreyParrot();
+            Assert.True(bird is Bird);
+        }
     }
 }
