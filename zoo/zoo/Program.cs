@@ -1,6 +1,7 @@
 ﻿using System;
 
 using zoo.Classes;
+using zoo.Interfaces;
 
 namespace zoo
 {
@@ -68,7 +69,13 @@ namespace zoo
             ostrich.Sleep();
             ostrich.Eat();
             Console.WriteLine("I can fly:" + ostrich.fly());
-
+            Console.WriteLine("**************");
+            Console.WriteLine("**************");
+            string foodOne = tiger.Hunt(monkey);
+            string foodTwo=tiger.Hunt(ostrich);
+            Console.WriteLine($"I can hunt {foodOne} and {foodTwo}");
+            Console.WriteLine("**************");
+            Console.WriteLine(monkey.Mimic("jump and clap"));
 
         }
     }

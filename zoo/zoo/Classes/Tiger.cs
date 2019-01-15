@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Interfaces;
 
 namespace zoo.Classes
 {
-    public class Tiger : Mammal
+    public class Tiger : Mammal,Hunt
     {
         public override string color => "Tabby";
 
@@ -14,6 +15,11 @@ namespace zoo.Classes
         public override void Eat()
         {
             Console.WriteLine("I eat all kinds of Meat! I am not vegetarian.");
+        }
+
+        public string Hunt(Edible food)
+        {
+            return food.type;
         }
 
         public override void Sleep()
