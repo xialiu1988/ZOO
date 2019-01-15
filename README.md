@@ -1,3 +1,3 @@
 # ZOO
 
-![draw](zoo.png)
+![draw](newzoo.png)
