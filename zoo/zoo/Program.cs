@@ -72,8 +72,9 @@ namespace zoo
             Console.WriteLine("**************");
             Console.WriteLine("**************");
             string foodOne = tiger.Hunt(monkey);
-            string foodTwo=tiger.Hunt(ostrich);
-            Console.WriteLine($"I can hunt {foodOne} and {foodTwo}");
+            //string foodTwo=tiger.Hunt(ostrich);
+            //Console.WriteLine($"I can hunt {foodOne} and {foodTwo}");
+            Console.WriteLine($"I can hunt{foodOne}");
             Console.WriteLine("**************");
             Console.WriteLine(monkey.Mimic("jump and clap"));
 
